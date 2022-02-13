@@ -82,7 +82,7 @@ def get_valid_equations(equation_length):
 	Steps to get list of valid equations:
 		1. Get all possible permutations
 		2a. Check that the permutation is valid
-		2b. Create different versions of the permutation based by inserting "==" sign in different positions
+		2b. Create different versions of the permutation by inserting "==" sign in different positions
 		3. Evaluate each potential equation to see if TRUE (e.g. 2+2==4 is TRUE, 2+2==5 is FALSE)
 	"""
 	numbers = '0123456789'
