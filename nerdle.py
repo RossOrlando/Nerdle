@@ -38,7 +38,8 @@ def check_permutation(perm, operators):
 			if x > 0 and is_operator_list[x-1] and is_operator_list[x]:
 				valid_perm = False
 
-			# If still valid, insert an '==' sign at each sequential position, but only if would not be immediately preceded by or followed by an operator.
+			# If still valid, insert an '==' sign at each sequential position, but only if would not be immediately
+			#  preceded by or followed by an operator.
 			# Note that cannot insert '==' at the first position, hence checking that x > 0
 			if valid_perm and x > 0 and (not perm[x-1] in operators) and (not perm[x] in operators):
 				perm_copy = perm.copy()
