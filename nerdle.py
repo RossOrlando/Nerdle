@@ -61,7 +61,7 @@ def check_permutation(perm, operators):
 
 def validate_equations(potential_equations_list):
 	"""
-	For the list of potentially valid equation, check whether they evaluate to TRUE
+	For the list of potentially valid equations, check whether they evaluate to TRUE
 	"""
 	passed_equations_list = []
 	result = False
@@ -116,7 +116,7 @@ def get_valid_equations(equation_length):
 def find_combinations(equations_list, equation_length):
 	"""
 	From the list of valid equations, check every unqiue pair
-	Only return those that have fully unique characters, defined as (equation_length * 2) + 1 to account for the equals sign characters
+	Only return those that have fully unique characters, defined as (equation_length * 2) + 1 to account for the equals sign character
 	Note that the two separate "==" characters (one in each equation) get reduced to a single "=" in the set() operation
 	"""
 	first_equation = ""
